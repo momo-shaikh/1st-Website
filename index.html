@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    
+
+    <!-- Link to Google Fonts for Poppins font -->
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" type="text/css" href="parallax_mtns.css">
+    <script src="sketch.js"></script>
+    <script src="sketch.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="parallax_mtns.js"></script>
+    <script src = "dots.js"></script>
+    <script src = "exp_tabs.js"></script>
+    <script src = "hero_page.js"></script>
+
+</head>
+<body>
+    <header>
+        <h4>Mohammad Shaikh</h4>
+            <h5 style = "color: #ffffff; top: 0px;"">Software Engineer | Web Developer</h3>
+            <div class="logo-section">
+                <img src="bear_logo.jpg" alt="Logo" class="logo">
+            </div>
+            <!-- Canvas element for the mountains -->
+            <canvas id="mountains"></canvas>
+            <!-- <canvas id="mountains"></canvas>
+            <div id="mountains-container">
+                <div>&nbsp;</div>
+            </div>   --> 
+        <div class="background"> 
+            <!-- empty for now  -->
+        </div>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>I'm an Undergraduate Electrical Engineering major
+            at the Arizona State University and current Space Engineering Intern 
+            at SAIC. 
+        </p>
+        <p>As an aspiring software engineer, I'm currently spending my time 
+            studying topics related to:
+        </p>
+        <ul class="about-me-list">
+            <li>AI/Machine Learning </li>
+            <li>Human-Computer Interation</li>
+            <li>Data science</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>My Experience</h1>
+
+        <div class="tab-container">
+            <button class="tab-button" data-tab="tab1">ML Intern</button>
+            <button class="tab-button" data-tab="tab2">SWE Intern</button>
+            <button class="tab-button" data-tab="tab3">Space Intern</button>
+            <!-- Add more tabs as needed -->
+        </div>
+        
+        <div class="tab-content">
+            <div id="tab1" class="tab-content-section">
+                <!-- Content for Tab 1 -->
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>Description for Project 1.</p>
+                    <div class="image-scroller">
+                        <div class="image-container">
+                            <img src="project1.jpg" alt="Image 1" class="scroller-image">
+                            <img src="project2.jpg" alt="Image 2" class="scroller-image">
+                            <img src="project3.jpg" alt="Image 3" class="scroller-image">
+                            <!-- Add more images as needed -->
+                        </div>
+                        <div class="dots-container">
+                            <!-- Dots will be dynamically added here by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="caption">F-22 Aircraft from the 477th Fighter Group 
+                        <span class="emoji">&#128507;</span>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>Description for Project 2.</p>
+                    <img src="project2.jpg" alt="Project 2">
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+            <div id="tab2" class="tab-content-section">
+                <!-- Content for Tab 2 -->
+                <div class="project">
+                    <h3>Project 3</h3>
+                    <p>Description for Project 3.</p>
+                    <img src="project3.jpg" alt="Project 3">
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+            <div id="tab3" class="tab-content-section">
+                <!-- Content for Tab 3 -->
+                <div class="project">
+                    <h3>Project 4</h3>
+                    <p>Description for Project 4.</p>
+                    <img src="project4.jpg" alt="Project 4">
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+
+        <div class="project">
+            <!-- <h3 style = "margin-top: -10px;">SAIC National Security & Space Intern</h3>
+            <p>Programmed flight computer updates to the U.S. Navy's 
+                F-22 stealth fighter aircraft.</p>
+            <div class="image-scroller">
+                <div class="image-container">
+                    <img src="project1.jpg" alt="Image 1" class="scroller-image">
+                    <img src="project2.jpg" alt="Image 2" class="scroller-image">
+                    <img src="project3.jpg" alt="Image 3" class="scroller-image">
+                </div>
+                <div class="dots-container">
+                </div>
+            </div>
+            <div class="caption">F-22 Aircraft from the 477th Fighter Group 
+                <span class="emoji">&#128507;</span>
+            </div> -->
+        </div>
+
+        <div class="project">
+            <!-- <h3>Astra Space Propulsion Intern</h3>
+            <p>Lead propulsion safety team for the cyrogenic fueling of Astra's 
+                Rocket 3.0 in Alaska's Pacific Spaceport Complex.</p>
+            <img src="project2.jpg" alt="Project 2">
+            <div class="caption">Rocket 3.0 Fueling on the Launch Pad 
+                <span class="emoji">&#128171</span>
+            </div> -->
+        </div>
+
+        <!-- Add more projects as needed -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
